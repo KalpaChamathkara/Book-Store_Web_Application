@@ -1,0 +1,573 @@
+* {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  color: #2d97ee;
+}
+
+/* Add underline effect on hover */
+header nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2d97ee;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover::after {
+  width: 100%; /* Full width on hover */
+}
+
+header .logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+/* Cart Button Styling */
+.carts-button {
+  position: relative;
+  color: white;
+  margin: 0 15px;
+  font-size: 18px;
+  padding: 5px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carts-button:hover {
+  color: #2d97ee; /* Change text color on hover */
+  text-decoration: none;
+}
+
+.carts-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2d97ee;
+  transition: all 0.3s ease;
+}
+
+.carts-button:hover::after {
+  width: 100%; /* Full width underline on hover */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Slider Container */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slider Controls (Previous & Next Buttons) */
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.slider-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+.slider-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn,
+.next-btn {
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+/* Slider Indicators */
+.slider-indicators {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: white;
+}
+
+/* Search Container (on top of the slider) */
+.search-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  color: white;
+  z-index: 3;
+  width: 80%;
+}
+
+.search-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+  width: 50%;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-container input[type="text"]:focus {
+  border-color: #000000;
+  box-shadow: 0 0 8px #000000;
+}
+
+/* ----------decide-what-to-read-------- */
+.decide-what-to-read {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 50px 0;
+  margin-top: 0px;
+}
+
+.decide-what-to-read h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.decide-what-to-read p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/*------------ Featured Categories Section------------ */
+.categories {
+  padding: 20px 20px;
+  background-color: #f3faff;
+  text-align: center;
+}
+
+.categories h2 {
+  margin-bottom: 20px; /* Space between the heading and the grid */
+  font-size: 28px;
+  color: #333;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Responsive grid layout */
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-grid div {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-grid div:hover {
+  transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+.category-grid i {
+  font-size: 24px;
+  color: #2d97ee;
+  margin-bottom: 10px;
+}
+
+/*--------- Best Selling , New Arrival Section----------- */
+.book-grid-section1 {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Aligning heading and button horizontally */
+.heading-and-button {
+  display: flex;
+  justify-content: space-between; /* Spaces out the items */
+  align-items: center; /* Aligns them vertically in the center */
+  margin-bottom: 20px; /* Adds space between the heading and the grid */
+}
+
+.book-grid-section1 h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0;
+}
+
+/* "See More" Button */
+.see-more-btn {
+  background-color: #ffffff;
+  color: rgb(112, 112, 112);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.see-more-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.see-more-btn a::after {
+  content: ">>"; /* Arrow icon */
+  margin-left: 5px;
+}
+
+.see-more-btn:hover {
+  color: #007bff;
+}
+
+/* Book Grid with Horizontal Auto Scroll */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 25px;
+  padding: 20px; /* Add padding around the grid */
+  max-width: 100%; /* Ensure the grid takes full width */
+  padding-bottom: 10px;
+}
+
+/* Individual Book Items */
+.book-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Images in Books */
+.book-item img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Book Titles and Details */
+.book-item h3 {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.book-item p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.book-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.heart-button,
+.cart-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.heart-button,
+.cart-button {
+  background-color: white;
+  color: #2d97ee;
+}
+
+.heart-button:hover,
+.cart-button:hover {
+  color: white;
+  background-color: #2d97ee;
+  transform: scale(1.1);
+}
+
+.heart-button i,
+.cart-button i {
+  font-size: 16px;
+}
+
+/*------------------News-------------------*/
+.news {
+  background-color: #f3faff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.news h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.news-items {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.news-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.news-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.news-item button {
+  background-color: #2d97ee;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.news-item button a {
+  color: white;
+  text-decoration: none;
+}
+
+.news-item button:hover {
+  background-color: #3f51b5;
+}
+
+/*--------------- Footer Section------------ */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #2d97ee; /* Accent color for headings */
+}
+
+.footer-section p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #2d97ee; /* Accent color for links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  color: #aaa;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 12px;
+}
