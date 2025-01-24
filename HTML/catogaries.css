@@ -1,8 +1,5 @@
 * {
-  font-family: poppins;
-}
-
-body {
+  font-family: Poppins;
   margin: 0;
   padding: 0;
 }
@@ -18,7 +15,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #2d97ee; /* Change text color on hover */
+  color: #2d97ee;
 }
 
 /* Add underline effect on hover */
@@ -29,22 +26,12 @@ header nav a::after {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #2d97ee; /* Gold color for underline */
+  background-color: #2d97ee;
   transition: all 0.3s ease;
 }
 
 header nav a:hover::after {
   width: 100%; /* Full width on hover */
-}
-
-/* Navigation Bar Styling */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -53,12 +40,44 @@ header .logo {
   font-weight: bold;
 }
 
-header nav :active {
-  background-color: #2d97ee;
-}
-
 header nav {
   display: flex;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: none;
 }
 
 /* Cart Button Styling */
