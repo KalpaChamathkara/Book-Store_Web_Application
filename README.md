@@ -16,3 +16,10 @@ BookStore is a responsive and user-friendly website designed to provide an engag
     Updates on book launches, author interviews, and upcoming book sales.
 * Footer:
     Includes contact details, quick links, and an overview of the BookStore.
+
+# Technologies Used
+* HTML5: Markup for structuring the website content.
+* JavaScript: This is for interactivity, including the dynamic slider.
+* CSS: Custom styling for unique design elements.
+
+
