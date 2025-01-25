@@ -1,366 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookStore homepage</title>
+    <link rel="stylesheet" href="/CSS/homepage.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="/JAVASCRIPT/slider.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BookStore homepage</title>
-  <link rel="stylesheet" href="/CSS/homepage.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-  <script src="/JAVASCRIPT/slider.js"></script>
-</head>
+  <body>
+    <header>
+      <div class="logo">
+        <a style="text-decoration: none; color: white" href="Homepage.html">
+          <i class="fas fa-book"></i> BOOKSTORE
+        </a>
+      </div>
+      <nav>
+        <a href="Homepage.html">Home</a>
+        <a href="categories.html" target="_self">Categories</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <button class="carts-button">Cart</button>
+    </header>
 
-<body>
-
-  <header>
-    <div class="logo">
-      <a style="text-decoration: none; color: white" href="Homepage.html">
-        <i class="fas fa-book"></i> BOOKSTORE
-      </a>
-    </div>
-    <nav>
-      <a href="Homepage.html">Home</a>
-      <a href="categories.html" target="_self">Categories</a>
-      <a href="about.html">About</a>
-    </nav>
-    <button class="carts-button">
-      Cart</i>
-    </button>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="slider-container">
-        <div class="slider">
-          <div class="slide">
-            <img src="https://wallpaperswide.com/download/books_3-wallpaper-1024x768.jpg" alt="Book 1" />
+    <main>
+      <section class="hero">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img
+                src="https://wallpaperswide.com/download/books_3-wallpaper-1024x768.jpg"
+                alt="Book 1"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://wallpaperswide.com/download/books_3-wallpaper-1024x768.jpg"
+                alt="Book 1"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://wallpaperswide.com/download/books_3-wallpaper-1024x768.jpg"
+                alt="Book 1"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://wallpaperswide.com/download/books_3-wallpaper-1024x768.jpg"
+                alt="Book 1"
+              />
+            </div>
           </div>
-          <div class="slide">
-            <img src="https://wallpaperswide.com/download/books_3-wallpaper-1024x768.jpg" alt="Book 1" />
+
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button class="prev-btn">&#10094;</button>
+            <button class="next-btn">&#10095;</button>
           </div>
-          <div class="slide">
-            <img src="https://wallpaperswide.com/download/books_3-wallpaper-1024x768.jpg" alt="Book 1" />
+
+          <!-- Slider Indicators -->
+          <div class="slider-indicators">
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
           </div>
-          <div class="slide">
-            <img src="https://wallpaperswide.com/download/books_3-wallpaper-1024x768.jpg" alt="Book 1" />
-          </div>
         </div>
 
-        <!-- Slider Controls -->
-        <div class="slider-controls">
-          <button class="prev-btn">&#10094;</button>
-          <button class="next-btn">&#10095;</button>
+        <!-- Search Container (on top of the slider) -->
+        <div class="search-container">
+          <h1>Welcome to BOOKSTORE</h1>
+          <input type="text" placeholder="Search for books..." />
         </div>
+      </section>
 
-        <!-- Slider Indicators -->
-        <div class="slider-indicators">
-          <span class="indicator"></span>
-          <span class="indicator"></span>
-          <span class="indicator"></span>
-          <span class="indicator"></span>
-        </div>
-      </div>
-
-      <!-- Search Container (on top of the slider) -->
-      <div class="search-container">
-        <h1>Welcome to BOOKSTORE</h1>
-        <input type="text" placeholder="Search for books..." />
-      </div>
-    </section>
-
-    <!-- New Section Added Below -->
-    <section class="decide-what-to-read">
-      <h2>Decide What You Read Next</h2>
-      <p>
-        You’re in the right place. Tell us what titles or genres you’ve
-        enjoyed in the past, and we’ll give you surprisingly insightful
-        recommendations.
-      </p>
-    </section>
-
-    <section class="categories">
-      <h2>Featured Categories</h2>
-      <div class="category-grid">
-        <div><i class="fas fa-book"></i> Fiction</div>
-        <div><i class="fas fa-book-reader"></i> Non-Fiction</div>
-        <div><i class="fas fa-flask"></i> Science</div>
-        <div><i class="fas fa-dragon"></i> Fantasy</div>
-        <div><i class="fas fa-landmark"></i> History</div>
-      </div>
-    </section>
-
-    <section class="book-grid-section1">
-      <h2>Best Selling</h2>
-      <button class="see-more-btn">
-        <a href="categories.html">See More</a>
-      </button>
-      <div class="book-grid">
-        <div class="book-item">
-          <img src="https://cms.sarasavi.lk/storage/product/9356992320.jpg" alt="IN THE LANGUAGE OF REMEMBERING" />
-          <h3>IN THE LANGUAGE OF REMEMBERING</h3>
-          <p>Author: AANCHAL MALHOTRA</p>
-          <p>Price: $11.16</p>
-          <button class="heart-button">
-            <i class="fas fa-heart"></i>
-          </button>
-          <button class="cart-button">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-        <div class="book-item">
-          <img src="https://cms.sarasavi.lk/storage/product/9356296200.jpg" alt="THE BANDIT QUEENS" />
-          <h3>THE BANDIT QUEENS</h3>
-          <p>Author: PARINI SHROFF</p>
-          <p>Price: $7.99</p>
-          <button class="heart-button">
-            <i class="fas fa-heart"></i>
-          </button>
-          <button class="cart-button">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-        <div class="book-item">
-          <img src="https://cms.sarasavi.lk/storage/product/9815233378.jpg" alt="PSALM 23 FOR KIDS" />
-          <h3>PSALM 23 FOR KIDS</h3>
-          <p>Author: N/A</p>
-          <p>Price: $2.88</p>
-          <button class="heart-button">
-            <i class="fas fa-heart"></i>
-          </button>
-          <button class="cart-button">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-        <div class="book-item">
-          <img src="https://cms.sarasavi.lk/storage/product/9356999155.jpg" alt="THE BOOK OF EVERLASTING THINGS" />
-          <h3>THE BOOK OF EVERLASTING THINGS</h3>
-          <p>Author: AANCHAL MALHOTRA</p>
-          <p>Price: $9.57</p>
-          <button class="heart-button">
-            <i class="fas fa-heart"></i>
-          </button>
-          <button class="cart-button">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-        <div class="book-item">
-          <img src="https://cms.sarasavi.lk/storage/product/0008392617.jpg" alt="WAKE UP" />
-          <h3>WAKE UP</h3>
-          <p>Author: PIERS MORGAN</p>
-          <p>Price: $10.94</p>
-          <button class="heart-button">
-            <i class="fas fa-heart"></i>
-          </button>
-          <button class="cart-button">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-        <div class="book-item">
-          <img src="https://cms.sarasavi.lk/storage/product/0006550622.jpg" alt="THE NAPOLEON OF CRIME" />
-          <h3>THE NAPOLEON OF CRIME</h3>
-          <p>Author: Ben Macintyre</p>
-          <p>Price: $10.64</p>
-          <button class="heart-button">
-            <i class="fas fa-heart"></i>
-          </button>
-          <button class="cart-button">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="book-grid-section1">
-      <h2>New Arrival</h2>
-
-      <button class="see-more-btn">
-        <a href="categories.html">See More</a>
-      </button>
-      <div class="book-grid">
-        <div class="book-item">
-          <img src="https://cms.sarasavi.lk/storage/product/1464219044.jpg" alt="THE SECRET WAR OF JULIA CHILD" />
-          <h3>THE SECRET WAR OF JULIA CHILD</h3>
-          <p>Author: DIANA R CHAMBERS</p>
-          <p>Price: $10.31</p>
-          <button class="heart-button">
-            <i class="fas fa-heart"></i>
-          </button>
-          <button class="cart-button">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-        <div class="book-item">
-          <img src="https://cms.sarasavi.lk/storage/product/9388247922.jpg" alt="THE LOST WORLD" />
-          <h3>THE LOST WORLD</h3>
-          <p>Author: Arthur Conan Doyle</p>
-          <p>Price: $5.60</p>
-          <button class="heart-button">
-            <i class="fas fa-heart"></i>
-          </button>
-          <button class="cart-button">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-        <div class="book-item">
-          <img src="https://cms.sarasavi.lk/storage/product/9385492594.jpg" alt="THE GAME PLAN FOR SALES SUCCESS" />
-          <h3>THE GAME PLAN FOR SALES SUCCESS</h3>
-          <p>Author: GARRY KINDER</p>
-          <p>Price: $6.05</p>
-          <button class="heart-button">
-            <i class="fas fa-heart"></i>
-          </button>
-          <button class="cart-button">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-        <div class="book-item">
-          <img src="https://cms.sarasavi.lk/storage/product/9392217382.jpg" alt="10X YOUR BUSINESS" />
-          <h3>10X YOUR BUSINESS</h3>
-          <p>Author: DHEERAJ SUBHASH GUPTA</p>
-          <p>Price: $9.36</p>
-          <button class="heart-button">
-            <i class="fas fa-heart"></i>
-          </button>
-          <button class="cart-button">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-        <div class="book-item">
-          <img src="https://cms.sarasavi.lk/storage/product/9385492780.jpg" alt="THE JUNGLE BOOK" />
-          <h3>THE JUNGLE BOOK</h3>
-          <p>Author: Rudyard Kipling</p>
-          <p>Price: $4.73</p>
-          <button class="heart-button">
-            <i class="fas fa-heart"></i>
-          </button>
-          <button class="cart-button">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-        <div class="book-item">
-          <img src="https://cms.sarasavi.lk/storage/product/6249348808.jpg" alt="WELCOME TO THE BOARD ROOM" />
-          <h3>WELCOME TO THE BOARD ROOM</h3>
-          <p>Author: ARUNA DAYANTHA</p>
-          <p>Price: $17.68</p>
-          <button class="heart-button">
-            <i class="fas fa-heart"></i>
-          </button>
-          <button class="cart-button">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- New News Section Added Below -->
-    <section class="news">
-      <h2>Latest News</h2>
-      <div class="news-items">
-        <div class="news-item">
-          <h3>Book Launch: New Thriller</h3>
-          <p>
-            We're excited to announce the launch of a new thriller novel by
-            Author X. Stay tuned for the release event!
-          </p>
-          <button><a href="news.html">Read More</a></button>
-        </div>
-        <div class="news-item">
-          <h3>Author Interview: Author Y</h3>
-          <p>
-            Catch our exclusive interview with Author Y, where they discuss
-            their latest bestseller and the writing process.
-          </p>
-          <button><a href="news.html">Read More</a></button>
-        </div>
-        <div class="news-item">
-          <h3>Upcoming Book Sale</h3>
-          <p>
-            Get ready for our biggest book sale of the year! Incredible
-            discounts on top-selling books.
-          </p>
-          <button><a href="news.html">Read More</a></button>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section about">
-        <h3>About BookStore</h3>
+      <!-- New Section Added Below -->
+      <section class="decide-what-to-read">
+        <h2>Decide What You Read Next</h2>
         <p>
-          Welcome to BookStore, your go-to destination for books across all
-          genres. Whether you're a casual reader or a bookworm, we have
-          something for everyone. Explore, discover, and enjoy!
+          You’re in the right place. Tell us what titles or genres you’ve
+          enjoyed in the past, and we’ll give you surprisingly insightful
+          recommendations.
         </p>
-      </div>
-      <div class="footer-section links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="categories.html">Categories</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="TermsConditions.html">Terms & Conditions</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="footer-section contact">
-        <h3>Contact Us</h3>
-        <p>Email: support@bookstore.com</p>
-        <p>Phone: +1 (555) 123-4567</p>
-        <p>Address: 123 BookStore Lane, Library City</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 BookStore. All rights reserved.</p>
-      <p>Designed by [Your Name or Team]</p>
-    </div>
-  </footer>
-</body>
+      </section>
 
-<script>
-  let currentIndex = 0;
-  const slides = document.querySelectorAll(".slide");
-  const indicators = document.querySelectorAll(".indicator");
+      <section class="categories">
+        <h2>Featured Categories</h2>
+        <div class="category-grid">
+          <div><i class="fas fa-book"></i> Fiction</div>
+          <div><i class="fas fa-book-reader"></i> Non-Fiction</div>
+          <div><i class="fas fa-flask"></i> Science</div>
+          <div><i class="fas fa-dragon"></i> Fantasy</div>
+          <div><i class="fas fa-landmark"></i> History</div>
+        </div>
+      </section>
 
-  // Function to show the current slide
-  const showSlide = (index) => {
-    currentIndex = (index + slides.length) % slides.length; // Wrap around index
-    const slider = document.querySelector(".slider");
-    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+      <section class="book-grid-section1">
+        <h2>Best Selling</h2>
+        <button class="see-more-btn">
+          <a href="categories.html">See More</a>
+        </button>
+        <div class="book-grid">
+          <div class="book-item">
+            <img
+              src="https://cms.sarasavi.lk/storage/product/9356992320.jpg"
+              alt="IN THE LANGUAGE OF REMEMBERING"
+            />
+            <h3>IN THE LANGUAGE OF REMEMBERING</h3>
+            <p>Author: AANCHAL MALHOTRA</p>
+            <p>Price: $11.16</p>
+            <button class="heart-button">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button class="cart-button">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+          <div class="book-item">
+            <img
+              src="https://cms.sarasavi.lk/storage/product/9356296200.jpg"
+              alt="THE BANDIT QUEENS"
+            />
+            <h3>THE BANDIT QUEENS</h3>
+            <p>Author: PARINI SHROFF</p>
+            <p>Price: $7.99</p>
+            <button class="heart-button">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button class="cart-button">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+          <div class="book-item">
+            <img
+              src="https://cms.sarasavi.lk/storage/product/9815233378.jpg"
+              alt="PSALM 23 FOR KIDS"
+            />
+            <h3>PSALM 23 FOR KIDS</h3>
+            <p>Author: N/A</p>
+            <p>Price: $2.88</p>
+            <button class="heart-button">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button class="cart-button">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+          <div class="book-item">
+            <img
+              src="https://cms.sarasavi.lk/storage/product/9356999155.jpg"
+              alt="THE BOOK OF EVERLASTING THINGS"
+            />
+            <h3>THE BOOK OF EVERLASTING THINGS</h3>
+            <p>Author: AANCHAL MALHOTRA</p>
+            <p>Price: $9.57</p>
+            <button class="heart-button">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button class="cart-button">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+          <div class="book-item">
+            <img
+              src="https://cms.sarasavi.lk/storage/product/0008392617.jpg"
+              alt="WAKE UP"
+            />
+            <h3>WAKE UP</h3>
+            <p>Author: PIERS MORGAN</p>
+            <p>Price: $10.94</p>
+            <button class="heart-button">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button class="cart-button">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+          <div class="book-item">
+            <img
+              src="https://cms.sarasavi.lk/storage/product/0006550622.jpg"
+              alt="THE NAPOLEON OF CRIME"
+            />
+            <h3>THE NAPOLEON OF CRIME</h3>
+            <p>Author: Ben Macintyre</p>
+            <p>Price: $10.64</p>
+            <button class="heart-button">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button class="cart-button">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+      </section>
 
-    // Update indicators
-    indicators.forEach((indicator, i) => {
-      if (i === currentIndex) {
-        indicator.classList.add("active");
-      } else {
-        indicator.classList.remove("active");
-      }
+      <section class="book-grid-section1">
+        <h2>New Arrival</h2>
+
+        <button class="see-more-btn">
+          <a href="categories.html">See More</a>
+        </button>
+        <div class="book-grid">
+          <div class="book-item">
+            <img
+              src="https://cms.sarasavi.lk/storage/product/1464219044.jpg"
+              alt="THE SECRET WAR OF JULIA CHILD"
+            />
+            <h3>THE SECRET WAR OF JULIA CHILD</h3>
+            <p>Author: DIANA R CHAMBERS</p>
+            <p>Price: $10.31</p>
+            <button class="heart-button">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button class="cart-button">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+          <div class="book-item">
+            <img
+              src="https://cms.sarasavi.lk/storage/product/9388247922.jpg"
+              alt="THE LOST WORLD"
+            />
+            <h3>THE LOST WORLD</h3>
+            <p>Author: Arthur Conan Doyle</p>
+            <p>Price: $5.60</p>
+            <button class="heart-button">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button class="cart-button">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+          <div class="book-item">
+            <img
+              src="https://cms.sarasavi.lk/storage/product/9385492594.jpg"
+              alt="THE GAME PLAN FOR SALES SUCCESS"
+            />
+            <h3>THE GAME PLAN FOR SALES SUCCESS</h3>
+            <p>Author: GARRY KINDER</p>
+            <p>Price: $6.05</p>
+            <button class="heart-button">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button class="cart-button">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+          <div class="book-item">
+            <img
+              src="https://cms.sarasavi.lk/storage/product/9392217382.jpg"
+              alt="10X YOUR BUSINESS"
+            />
+            <h3>10X YOUR BUSINESS</h3>
+            <p>Author: DHEERAJ SUBHASH GUPTA</p>
+            <p>Price: $9.36</p>
+            <button class="heart-button">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button class="cart-button">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+          <div class="book-item">
+            <img
+              src="https://cms.sarasavi.lk/storage/product/9385492780.jpg"
+              alt="THE JUNGLE BOOK"
+            />
+            <h3>THE JUNGLE BOOK</h3>
+            <p>Author: Rudyard Kipling</p>
+            <p>Price: $4.73</p>
+            <button class="heart-button">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button class="cart-button">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+          <div class="book-item">
+            <img
+              src="https://cms.sarasavi.lk/storage/product/6249348808.jpg"
+              alt="WELCOME TO THE BOARD ROOM"
+            />
+            <h3>WELCOME TO THE BOARD ROOM</h3>
+            <p>Author: ARUNA DAYANTHA</p>
+            <p>Price: $17.68</p>
+            <button class="heart-button">
+              <i class="fas fa-heart"></i>
+            </button>
+            <button class="cart-button">
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- New News Section Added Below -->
+      <section class="news">
+        <h2>Latest News</h2>
+        <div class="news-items">
+          <div class="news-item">
+            <h3>Book Launch: New Thriller</h3>
+            <p>
+              We're excited to announce the launch of a new thriller novel by
+              Author X. Stay tuned for the release event!
+            </p>
+            <button><a href="news.html">Read More</a></button>
+          </div>
+          <div class="news-item">
+            <h3>Author Interview: Author Y</h3>
+            <p>
+              Catch our exclusive interview with Author Y, where they discuss
+              their latest bestseller and the writing process.
+            </p>
+            <button><a href="news.html">Read More</a></button>
+          </div>
+          <div class="news-item">
+            <h3>Upcoming Book Sale</h3>
+            <p>
+              Get ready for our biggest book sale of the year! Incredible
+              discounts on top-selling books.
+            </p>
+            <button><a href="news.html">Read More</a></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>About BookStore</h3>
+          <p>
+            Welcome to BookStore, your go-to destination for books across all
+            genres. Whether you're a casual reader or a bookworm, we have
+            something for everyone. Explore, discover, and enjoy!
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="TermsConditions.html">Terms & Conditions</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p>Email: support@bookstore.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+          <p>Address: 123 BookStore Lane, Library City</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 BookStore. All rights reserved.</p>
+        <p>Designed by [Your Name or Team]</p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+    const indicators = document.querySelectorAll(".indicator");
+
+    // Function to show the current slide
+    const showSlide = (index) => {
+      currentIndex = (index + slides.length) % slides.length; // Wrap around index
+      const slider = document.querySelector(".slider");
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+      // Update indicators
+      indicators.forEach((indicator, i) => {
+        if (i === currentIndex) {
+          indicator.classList.add("active");
+        } else {
+          indicator.classList.remove("active");
+        }
+      });
+    };
+
+    // Event Listeners for controls
+    document.querySelector(".next-btn").addEventListener("click", () => {
+      showSlide(currentIndex + 1);
     });
-  };
 
-  // Event Listeners for controls
-  document.querySelector(".next-btn").addEventListener("click", () => {
-    showSlide(currentIndex + 1);
-  });
+    document.querySelector(".prev-btn").addEventListener("click", () => {
+      showSlide(currentIndex - 1);
+    });
 
-  document.querySelector(".prev-btn").addEventListener("click", () => {
-    showSlide(currentIndex - 1);
-  });
+    // Add click events for indicators
+    indicators.forEach((indicator, i) => {
+      indicator.addEventListener("click", () => showSlide(i));
+    });
 
-  // Add click events for indicators
-  indicators.forEach((indicator, i) => {
-    indicator.addEventListener("click", () => showSlide(i));
-  });
+    // Auto-slide every 5 seconds
+    setInterval(() => {
+      showSlide(currentIndex + 1);
+    }, 5000);
 
-  // Auto-slide every 5 seconds
-  setInterval(() => {
-    showSlide(currentIndex + 1);
-  }, 5000);
-
-  // Initialize
-  showSlide(currentIndex);
-
-</script>
-
+    // Initialize
+    showSlide(currentIndex);
+  </script>
 </html>
