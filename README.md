@@ -23,3 +23,9 @@ BookStore is a responsive and user-friendly website designed to provide an engag
 * CSS: Custom styling for unique design elements.
 
 
+
+![home](https://github.com/user-attachments/assets/e1eb6f3d-0a9a-42ea-9e26-68d086115f21)
+![catogary](https://github.com/user-attachments/assets/1f16487c-4158-4a76-87e9-516862858103)
+![about](https://github.com/user-attachments/assets/d12e9cc2-c420-4ff8-9026-07f8cc5b79ab)
+![faq](https://github.com/user-attachments/assets/5e4df5ea-cca0-4bee-8110-16f78f68606c)
+![book](https://github.com/user-attachments/assets/e73abea8-cfea-4365-a2f1-a8942560210a)
